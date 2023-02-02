@@ -1,0 +1,138 @@
+body {
+	background-image: url(https://cdn.pixabay.com/photo/2018/03/05/08/18/wood-3200219_960_720.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 10px;
+}
+#undernav {
+	font-size: 20px;
+}
+#title {
+	font-family: "Dancing Script",
+		cursive;
+}
+#body {
+	font-family: "Open Sans Condensed",
+		sans-serif;
+}
+nav {
+	font-size: 18px;
+}
+#menu {
+	font-size: 20px;
+}
+.card-header {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 16px !important;
+	align-items: center;
+	height: 48px;
+	overflow: hidden;
+}
+
+.donate-icon {
+	display: flex;
+	align-self: stretch;
+	align-items: center;
+	position: relative;
+	padding-right: 1.2rem;
+	float: right;
+	background: #dadada;
+}
+
+.donate-icon:before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 48px;
+	height: 48px;
+	transform: rotate(
+			45deg
+		)
+		translate(
+			-50%,
+			50%
+		);
+	background: #dadada;
+}
+
+.donate-icon i {
+	color: #187415;
+	background: #fff;
+	padding: 8px;
+	z-index: 1;
+	border-radius: 50%;
+}
+
+.avatar {
+	max-width: 50px;
+}
+
+.fundraiser {
+	display: flex;
+	align-items: flex-start;
+}
+
+.fundraiser .name {
+	font-size: 1rem;
+}
+
+.fundraiser
+	.creator {
+	font-size: 0.785rem;
+}
+
+.fundraiser
+	.details {
+	flex: 1;
+}
+
+/* Ugly workaroung - sorry :( */
+.btn-donate,
+.btn-donate:hover,
+.btn-donate:active,
+.btn-donate:focus {
+	background: var(
+		--yt-blue
+	);
+	color: #fff;
+}
+
+.sum {
+	text-align: center;
+	font-weight: 500;
+}
+
+.card-footer a {
+	font-size: 0.785rem;
+	font-weight: 500;
+}
+
+/* Popover styles */
+.popover-blue {
+	background: var(
+		--yt-blue
+	);
+	border-radius: 0;
+}
+
+.popover-blue
+	.arrow:after {
+	border-bottom-color: var(
+		--yt-blue
+	) !important;
+}
+
+.popover-blue
+	.popover-body {
+	color: #fff;
+	font-size: 0.785rem;
+}
+
+.btn-dismiss {
+	float: right;
+	box-shadow: none;
+}
+:root {
+	--yt-blue: #0f5fd3; /* This is a custom color used by YouTube */
+}
